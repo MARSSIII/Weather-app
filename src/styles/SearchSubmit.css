@@ -1,0 +1,36 @@
+.search-btn {
+  background-color: var(--brand-core);
+  color: #fff;
+
+  border: none;
+  border-radius: var(--ui-radius-pill);
+  box-shadow: var(--elevation-low);
+
+  padding: 14px 28px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--fx-duration),
+    transform 0.1s;
+
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background-color: var(--brand-faded);
+}
+
+.search-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .search-btn {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+}

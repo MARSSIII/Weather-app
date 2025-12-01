@@ -1,0 +1,65 @@
+.segmented-control {
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--tile-dimmed);
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  padding: 3px;
+  user-select: none;
+
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+}
+
+.segmented-control__option {
+  height: 100%;
+  min-width: 32px;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 8px;
+  border-radius: 6px;
+
+  color: var(--ink-faint);
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.segmented-control__option:hover:not(.active) {
+  color: var(--ink-solid);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.segmented-control__option.active {
+  background-color: var(--tile-base);
+  color: var(--ink-solid);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+:root[data-ui-mode="dark"] .segmented-control {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+}
+
+:root[data-ui-mode="dark"] .segmented-control__option:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+}
+
+:root[data-ui-mode="dark"] .segmented-control__option.active {
+  background-color: #334155;
+  color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}

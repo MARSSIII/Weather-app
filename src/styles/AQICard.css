@@ -1,0 +1,53 @@
+.aqi-module {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.aqi-module__title {
+  color: var(--ink-muted);
+
+  margin: 0;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.aqi-module__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.aqi-module__badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+
+  color: #fff;
+  box-shadow: var(--elevation-low);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.aqi-module__status {
+  color: var(--ink-solid);
+
+  font-size: 1rem;
+  font-weight: 600;
+}

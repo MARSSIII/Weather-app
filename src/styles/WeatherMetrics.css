@@ -1,0 +1,43 @@
+.metrics-grid {
+  width: 100%;
+}
+
+.metric-tile {
+  background-color: var(--tile-base);
+  border: 1px solid var(--border-line);
+  border-radius: var(--ui-radius-box);
+
+  padding: 16px 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+
+  transition: background-color var(--fx-duration);
+}
+
+.metric-tile:hover {
+  background-color: var(--tile-dimmed);
+}
+
+.metric-tile__label {
+  color: var(--ink-muted);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-tile__value {
+  color: var(--ink-solid);
+
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  font-variant-numeric: tabular-nums;
+}

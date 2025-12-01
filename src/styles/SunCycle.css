@@ -1,0 +1,86 @@
+.sun-tracker {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20px;
+
+  background-color: var(--tile-base);
+  border-radius: var(--ui-radius-box);
+}
+
+.sun-tracker__title {
+  margin: 0 0 10px 0;
+
+  color: var(--ink-muted);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sun-tracker__graphic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+}
+
+.sun-tracker__svg {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+
+  overflow: visible;
+
+  filter: drop-shadow(0 0 4px rgba(37, 99, 235, 0.2));
+}
+
+.sun-tracker__legend {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4px;
+  padding-top: 12px;
+
+  border-top: 1px solid var(--tile-dimmed);
+}
+
+.sun-tracker__point {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sun-tracker__point--start {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sun-tracker__point--end {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.sun-tracker__label {
+  color: var(--ink-faint);
+
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.sun-tracker__time {
+  color: var(--ink-solid);
+
+  font-size: 1rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
